@@ -1,0 +1,3 @@
+[submodule "code/kindle-highlights"]
+	path = code/kindle-highlights
+	url = https://github.com/ektar/kindle-highlights.git
