@@ -4,7 +4,7 @@ Didn't want to pollute my environment with ruby, encapsulated in docker...
 
 To enter for development:
 ```
-docker run -it --rm -v $(pwd)/code:/code ektar/ruby-kindle /bin/bash
+$ docker run -it --rm -v $(pwd)/code:/code ektar/ruby-kindle /bin/bash
 # irb
 irb(main):001:0> require 'kindle_highlights'
 => true
