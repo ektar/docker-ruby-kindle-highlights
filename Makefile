@@ -8,7 +8,7 @@ help:
 	
 all : build-ruby
 
-build-ruby : name = ruby
+build-ruby : name = ruby-kindle
 build-ruby : ver = 1.01
 build-ruby : docker_file = ./docker/Dockerfile
 build-ruby : $(docker_file)
