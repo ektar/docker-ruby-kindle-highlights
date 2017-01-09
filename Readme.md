@@ -79,3 +79,12 @@ irb(main):005:0> y highlights[0..5]
 ...
 ```
 
+In the future will port to Python...
+
+References:
+
+  * https://github.com/speric/kindle-highlights
+  * https://blog.jverkamp.com/2015/07/02/scraping-kindle-highlights/
+  * https://github.com/mieubrisse/kindle-highlight-scraper
+  * https://swizec.com/blog/scraping-with-mechanize-and-beautifulsoup/swizec/5039
+  * https://pythondevs.wordpress.com/2014/04/08/web-scrapping-using-mechanize-and-beautifulsoup/
