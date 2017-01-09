@@ -13,6 +13,10 @@ B008035HQQ: The New Geography of Jobs
 B00NP8MDYK: 'The Patient Will See You Now: The Future of Medicine is in Your Hands'
 B01B2LHJU4: 'The Road Taken: The History and Future of America''s Infrastructure'
 ...
+```
+
+To list highlights for *The New Geography of Jobs*, book ID B008035HQQ:
+```
 $ docker run -it -e AMAZON_USER=<username> -e AMAZON_PASSWORD=<password> -e AMAZON_BOOK_ID=B008035HQQ \
   --rm ektar/ruby-kindle /code/list-highlights.rb
 482224: Unique among industrialized nations, it decided to make high school essentially
