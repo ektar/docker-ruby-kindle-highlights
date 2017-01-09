@@ -1,6 +1,15 @@
 # Dockerized environment for Kindle Highlights
 
-Didn't want to pollute my environment with ruby, encapsulated in docker...
+I wanted to try a kindle highlights [scraper](https://github.com/speric/kindle-highlights), 
+but it's written in Ruby and I didn't want to mess with installation, encapsulated in docker...
+
+**Note**: Unfortunately, after a while I keep getting captcha errors from Amazon, haven't been 
+able to resolve...  I'm still able to login manually to website, but can't use this tool :(
+
+To list books:
+```
+docker run -it -e AMAZON_USER=<username> -e AMAZON_PASSWORD=<password> --rm -v $(pwd)/code:/code ektar/ruby-kindle /code/list-books.rb
+```
 
 To enter for development:
 ```

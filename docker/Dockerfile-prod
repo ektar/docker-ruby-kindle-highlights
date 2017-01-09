@@ -1,0 +1,3 @@
+from ektar/ruby-kindle-dev:latest
+
+COPY ./code /code
