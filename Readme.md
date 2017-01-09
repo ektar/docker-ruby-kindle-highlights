@@ -8,12 +8,25 @@ able to resolve...  I'm still able to login manually to website, but can't use t
 
 To list books:
 ```
-docker run -it -e AMAZON_USER=<username> -e AMAZON_PASSWORD=<password> --rm -v $(pwd)/code:/code ektar/ruby-kindle /code/list-books.rb
+$ docker run -it -e AMAZON_USER=<username> -e AMAZON_PASSWORD=<password> --rm ektar/ruby-kindle /code/list-books.rb
+B008035HQQ: The New Geography of Jobs
+B00NP8MDYK: 'The Patient Will See You Now: The Future of Medicine is in Your Hands'
+B01B2LHJU4: 'The Road Taken: The History and Future of America''s Infrastructure'
+...
+$ docker run -it -e AMAZON_USER=<username> -e AMAZON_PASSWORD=<password> -e AMAZON_BOOK_ID=B008035HQQ \
+  --rm ektar/ruby-kindle /code/list-highlights.rb
+482224: Unique among industrialized nations, it decided to make high school essentially
+    universal; by contrast, European countries&mdash;traditionally more elitist in
+    all matters&mdash;waited several decades.
+482817: The American worker was so much better educated than the workers of other
+    countries that he became the most productive, innovative, and entrepreneurial
+    in the world.
+...
 ```
 
 To enter for development:
 ```
-$ docker run -it --rm -v $(pwd)/code:/code ektar/ruby-kindle /bin/bash
+$ docker run -it --rm -v $(pwd)/code:/code -v $(pwd)/lib:/lib-dev ektar/ruby-kindle-dev /bin/bash
 # irb
 irb(main):001:0> require 'kindle_highlights'
 => true
